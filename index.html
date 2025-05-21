@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: blue;
+      }
+      .main {
+        flex: basis;
+        width: 400px;
+        height: 400px;
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px gray;
+      }
+      .main h3 {
+        padding: 20px;
+        font-size: 30px;
+      }
+      .main form {
+        padding: 20px;
+      }
+      .form-outer {
+        margin-bottom: 20px;
+      }
+      .form-outer label {
+        display: block;
+      }
+      .form-outer input {
+        width: 100%;
+        height: 35px;
+      }
+      .main button {
+        width: 100%;
+        padding: 10px 10px;
+        background-color: blue;
+        color: white;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <div class="main">
+      <h3>Welcome to the HTML page</h3>
+      <form method="POST" id="form" action="/submit">
+        <div class="form-outer">
+          <label>Name:</label>
+          <input type="text" name="name" required />
+        </div>
+
+        <div class="form-outer">
+          <label>Email</label>
+          <input type="email" name="email" required />
+        </div>
+
+        <div class="form-outer">
+          <label>Phone</label>
+          <input type="text" name="phone" required />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script>
+    let url =
+      "https://script.google.com/macros/s/AKfycbyatXi4Iuv52sUpCQJ_AfwtwjmzitAv0gn0GbavZJ9cLtRZD7oh1ePOcW0KWt4B8FMjOw/exec";
+    const form = document.getElementById("form");
+    form.addEventListener("submit", function (event) {
+      e.target.btn.innerHTML = "submitting...";
+      let d = new FormData(form);
+      fetch(url, {
+        method: "POST",
+        body: d,
+      })
+        .then((response) => response.text())
+        .then((data) => {
+          e.target.btn.innerHTML = "submit";
+          console.log("Success:", data);
+          alert("Form submitted successfully!");
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          alert("Error submitting form.");
+        });
+      event.preventDefault(); // Prevent the default form submission
+
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+
+      fetch(url, {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Success:", data);
+          alert("Form submitted successfully!");
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          alert("Error submitting form.");
+        });
+    });
+  </script>
+</html>

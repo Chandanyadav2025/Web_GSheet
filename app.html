@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <div style="display: flex; flex-direction: column">
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          background-color: #eca324;
+          width: 100vw;
+          height: 100px;
+          position: relative;
+        "
+      >
+        <h4 style="margin: 0; text-align: center; flex: 1; font-size: 40px">
+          PKO Calling Form
+        </h4>
+      </div>
+
+      <div
+        style="
+          padding-top: 8px;
+          padding-bottom: 8px;
+          width: 95vw;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        "
+      >
+        <a
+          href="https://www.jansuraaj.org/"
+          target="_blank"
+          style="text-decoration: none"
+        >
+          <button
+            type="button"
+            style="
+              background-color: #007bff;
+              color: #fff;
+              border: none;
+              border-radius: 4px;
+              padding: 8px 20px;
+              font-size: 16px;
+              cursor: pointer;
+            "
+          >
+            Link
+          </button>
+        </a>
+      </div>
+      <div style="background-color: #87ceeb; border-radius: 8px; padding: 10px">
+        <p style="font-weight: bold; font-size: 15px">
+          नमस्कार, मेरा नाम __ है और मैं प्रशांत किशोर जी के ऑफिस से बात कर रहा
+          हूँ/ रही हूँ / Aapki sahayata karne ke liye mujhe kuch avashyak
+          jaankari ki zaroorat hogi
+        </p>
+      </div>
+      <div class="container" style="width: 100vw; padding: 10px">
+        <form method="post" action="" name="contact-form">
+          <div>
+            <label for="source-select">(Q1) Source of Calling? *</label>
+            <br />
+            <select
+              style="width: 100vw; margin: 10px 0; height: 50px"
+              name="source_of_calling"
+              required
+            >
+              <option value="" disabled selected hidden>Select source</option>
+              <option value="Inbound">Inbound</option>
+              <option value="Missed">Missed</option>
+              <option value="PK's Gmail">PK's Gmail</option>
+              <option value="PK's Twitter">PK's Twitter</option>
+              <option value="Website">Website</option>
+              <option value="Waik-in Request">Waik-in Request</option>
+              <option value="Referral">Referral</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="Agent_ID"
+              >(Q2) एजेंट आइडी / Enter your Agent ID *</label
+            >
+            <br />
+            <select
+              style="width: 100vw; margin: 10px 0; height: 50px"
+              name="Agent_ID"
+              required
+            >
+              <option value="" disabled selected hidden>Select source</option>
+              <option value="Sajid Md Khan(JS776)">
+                1.Sajid Md Khan(JS776)
+              </option>
+              <option value="Faizul Haque (JS770)">
+                2.Faizul Haque (JS770)
+              </option>
+              <option value="Saif Hussain (JS810)">
+                3.Saif Hussain (JS810)
+              </option>
+              <option value="Suniti Vardhan (JS794)">
+                4.Suniti Vardhan (JS794)
+              </option>
+              <option value="Shubhankar Krishna (JS916)">
+                5.Shubhankar Krishna (JS916)
+              </option>
+              <option value="Vishal Singh (JS769)">
+                6.Vishal Singh (JS769)
+              </option>
+              <option value="Priya Ranjan Kumar (JS824)">
+                7.Priya Ranjan Kumar (JS824)
+              </option>
+              <option value="Nilesh Ranjan Jha (JS926)">
+                8.Nilesh Ranjan Jha (JS926)
+              </option>
+              <option value="Aruna Kumari (JS813)">
+                9.Aruna Kumari (JS813)
+              </option>
+              <option value="Sanjana Bharti (JS809)">
+                10.Sanjana Bharti (JS809)
+              </option>
+              <option value="Priyaranjan (JS824)">
+                11.Priyaranjan (JS824)
+              </option>
+              <option value="Ashish Kumar (JS786)">
+                12. Ashish Kumar (JS786)
+              </option>
+
+              <option value="Raushan Kumar (JS784)">
+                13. Raushan Kumar (JS784)
+              </option>
+              <option value="karan kumar (JS775)">
+                14. karan kumar (JS775)
+              </option>
+              <option value="Rohit Raj (JS1040)">15. Rohit Raj (JS1040)</option>
+              <option value="Shubham kumar (JS821)">
+                16. Shubham kumar (JS821)
+              </option>
+              <option value="Saurabh Kumar (JS1044)">
+                17. Saurabh Kumar (JS1044)
+              </option>
+              <option value="Sana Arshad (JS771)">
+                18. Sana Arshad (JS771)
+              </option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="source-select">(Q3) Requestee's Full Name ? *</label>
+            <br />
+            <input
+              type="text"
+              style="width: 100vw; margin: 10px 0; height: 50px"
+              name="Requestee_Name"
+              id="source-select"
+              required
+              placeholder="Enter Full Name"
+            />
+          </div>
+          <br />
+          <div>
+            <label>(Q4) Gender *</label>
+            <br />
+            <div
+              style="
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                margin-bottom: 10px;
+              "
+            >
+              <label style="display: flex; align-items: center; gap: 5px">
+                <input type="radio" name="Gender" value="Male" required />
+                Male
+              </label>
+              <label style="display: flex; align-items: center; gap: 5px">
+                <input type="radio" name="Gender" value="Female" />
+                Female
+              </label>
+              <label style="display: flex; align-items: center; gap: 5px">
+                <input type="radio" name="Gender" value="Other" />
+                Other
+              </label>
+            </div>
+          </div>
+          <div>
+            <label for="Mobile_no">(Q5) Mobile Number (Filled by agent)</label>
+            <br />
+            <input
+              style="width: 100vw; margin: 10px 0; height: 50px"
+              type="text"
+              name="Mobile_no"
+              placeholder="Write Phone Number (Only numbers)"
+            />
+          </div>
+
+          <br />
+          <div>
+            <label>Same As WhatsApp Number?</label>
+            <br />
+            <div
+              style="
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                margin-bottom: 10px;
+              "
+            >
+              <label style="display: flex; align-items: center; gap: 5px">
+                <input
+                  type="radio"
+                  id="Yes"
+                  name="Same_as_whatsapp_no."
+                  value="Yes"
+                  required
+                />
+                Yes
+              </label>
+              <label style="display: flex; align-items: center; gap: 5px">
+                <input
+                  type="radio"
+                  id="No"
+                  name="Same_as_whatsapp_no."
+                  value="No"
+                />
+                No
+              </label>
+            </div>
+          </div>
+          <br />
+
+          <div>
+            <label for="Whatsapp_no">(Q6) WhatsApp Number </label>
+            <br />
+            <input
+              type="text"
+              style="width: 100vw; margin: 10px 0; height: 50px"
+              required
+              name="Whatsapp_no"
+              placeholder="Write Phone Number(Only numbers)"
+            />
+          </div>
+          <div>
+            <label for="source_of_contact"
+              >(Q7) How did you hear about us? *</label
+            >
+            <br />
+            <select
+              style="width: 100vw; margin: 10px 0; height: 50px"
+              required
+              name="source_of_contact"
+            >
+              <option value="" disabled selected hidden>Select source</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Youtube">Youtube</option>
+              <option value="whatsapp">whatsapp</option>
+              <option value="Instagram">Instagram</option>
+              <option value="Print Media">Print Media</option>
+              <option value="Gmail">Gmail</option>
+              <option value="Twitter">Twitter</option>
+              <option value="Poster / Banner">Poster / Banner</option>
+              <option value="TV">TV</option>
+              <option value="Social listening">Social listening</option>
+              <option value="PK Connect App">PK Connect App</option>
+              <option value="D2D Campaign">D2D Campaign</option>
+              <option value="Tele Campaign">Tele Campaign</option>
+              <option value="JS">JS</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div>
+            <p style="color: #007bff; font-weight: bold; font-size: 15px">
+              Sir/Ma'am, please wait while I get your details from the system
+            </p>
+            <p style="color: #007bff; font-weight: bold; font-size: 15px">
+              सर / मैडम, कृपया प्रतीक्षा करें, हम सिस्टम से आपकी जानकारी प्राप्त
+              कर रहे हैं
+            </p>
+            <button
+              type="button"
+              style="
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                padding: 8px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                margin-bottom: 10px;
+              "
+            >
+              Get information
+            </button>
+          </div>
+
+          <div>
+            <label for="Block_name">(Q5) Block Name? </label>
+            <br />
+            <input
+              type="text"
+              style="width: 100vw; margin: 10px 0; height: 50px"
+              required
+              name="Block_name"
+              placeholder="Enter Block Name"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="District_name">(Q6) जिला / District Name? </label>
+            <br />
+            <input
+              type="text"
+              style="width: 100vw; margin: 10px 0; height: 50px"
+              required
+              name="District_name"
+              placeholder="Enter District Name"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="State_name">(Q7) State Name? </label>
+            <br />
+            <select
+              style="width: 100vw; margin: 10px 0; height: 50px"
+              name="State_name"
+              required
+            >
+              <option value="" disabled selected hidden>Select state</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="Reasons_for_calling"
+              >(Q8) What is your reason for Calling?
+            </label>
+            <br />
+            <select
+              style="width: 100vw; margin: 10px 0; height: 50px"
+              name="Reasons_for_calling"
+              required
+            >
+              <option value="" disabled selected hidden>
+                Select Your Reason
+              </option>
+              <option value="Query">Query</option>
+              <option value="Issue/Complaint">Issue/Complaint</option>
+              <option value="Request">Request</option>
+              <option value="Help">Help</option>
+              <option value="Suggestion/Feedback">Suggestion/Feedback</option>
+              <option value="Other">Other</option>
+              <option value="Junk Call">Junk Call</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="Remarks">(Q9) Additional Remarks? </label>
+            <br />
+            <input
+              style="width: 100vw; margin: 10px 0; height: 50px"
+              type="text"
+              name="Remarks"
+              placeholder="Enter Remarks"
+            />
+          </div>
+          <br />
+          <div>
+            <label>(Q10) Query Resolved Or Not?</label>
+            <br />
+            <div
+              style="
+                display: flex;
+                padding: 10px;
+                gap: 20px;
+                align-items: center;
+                flex-direction: row;
+                margin-bottom: 8px;
+              "
+            >
+              <label
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 5px;
+                  padding: 5px;
+                "
+              >
+                <input type="radio" name="Query_status" value="Yes" required />
+                Yes
+              </label>
+              <label style="display: flex; align-items: center; gap: 5px">
+                <input type="radio" name="Query_status" value="No" />
+                No
+              </label>
+            </div>
+          </div>
+          <div>
+            <label>(Q11) Master Feed Data?</label>
+            <br />
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                margin-bottom: 0px;
+                padding: 10px;
+              "
+            >
+              <label style="display: flex; align-items: center; gap: 5px">
+                <input
+                  type="radio"
+                  name="Feed_data_status"
+                  value="Yes"
+                  required
+                />
+                Yes
+              </label>
+              <label style="display: flex; align-items: center; gap: 5px">
+                <input type="radio" name="Feed_data_status" value="No" />
+                No
+              </label>
+            </div>
+          </div>
+          <br />
+          <div>
+            <label>(Q33) Have you sent the WA link to join group?</label>
+            <br />
+            <div
+              style="
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                margin-bottom: 10px;
+                padding: 10px;
+              "
+            >
+              <label style="display: flex; align-items: center; gap: 5px">
+                <input
+                  type="radio"
+                  name="WA_link_sent_or_not"
+                  value="Yes"
+                  required
+                />
+                Yes
+              </label>
+              <label style="display: flex; align-items: center; gap: 5px">
+                <input type="radio" name="WA_link_sent_or_not" value="No" />
+                No
+              </label>
+              <label style="display: flex; align-items: center; gap: 5px">
+                <input
+                  type="radio"
+                  name="WA_link_sent_or_not"
+                  value="Already Joined"
+                />
+                Already Joined
+              </label>
+            </div>
+          </div>
+          <br />
+
+          <label for="membersip_id">Membership ID</label>
+          <br />
+          <input
+            style="width: 100vw; margin: 10px 0; height: 50px"
+            type="text"
+            name="Membership_id"
+            placeholder="Enter Membership ID"
+          />
+          <br />
+          <div
+            style="display: flex; align-items: center; justify-content: center"
+          >
+            <input
+              style="width: 200px; background-color: #007bff; height: 50px"
+              type="submit"
+              value="Submit"
+              id="submit"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="app.js"></script>
